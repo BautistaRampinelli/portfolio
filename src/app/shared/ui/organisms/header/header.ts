@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, input } from '@angular/core';
 import { ThemeSelector } from '../../atoms/theme-selector/theme-selector';
 import { CustomButton } from '../../atoms/custom-button/custom-button';
 
@@ -9,5 +9,5 @@ import { CustomButton } from '../../atoms/custom-button/custom-button';
   styleUrl: './header.scss',
 })
 export class Header {
-
+  protected readonly title = input<string>('Bautista Rampinelli');
 }
