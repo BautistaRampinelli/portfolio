@@ -1,1 +1,11 @@
-<p>theme-selector works!</p>
+<mat-button-toggle-group
+  [value]="current()"
+  (change)="onChange($event.value)"
+  class="theme-toggle"
+>
+  @for (t of themes; track t) {
+  <mat-button-toggle [value]="t">
+    {{ t.replace("theme-", "").toUpperCase() }}
+  </mat-button-toggle>
+  }
+</mat-button-toggle-group>

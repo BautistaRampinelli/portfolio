@@ -1,0 +1,47 @@
+@use '@angular/material' as mat;
+
+@include mat.core();
+
+$theme-elegant-base: mat.define-theme((
+  color: (
+    theme-type: light,
+    use-system-variables: true
+  )
+));
+
+.theme-elegant {
+  @include mat.all-component-themes($theme-elegant-base);
+
+  --brand-1: #14248A;
+  --brand-2: #1F7A8C;
+  --brand-bg: #E9F1F7;
+  --brand-surface: #EFFFFF;
+  --brand-ink: #1E1B18;
+
+  background-color: var(--brand-bg);
+  color: var(--brand-ink);
+}
+
+.theme-light {
+  @include mat.all-component-themes(mat.define-theme((
+    color: ( theme-type: light, use-system-variables: true )
+  )));
+}
+
+.theme-dark {
+  @include mat.all-component-themes(mat.define-theme((
+    color: ( theme-type: dark, use-system-variables: true )
+  )));
+}
+
+.theme-pop {
+  @include mat.all-component-themes(mat.define-theme((
+    color: ( theme-type: light, use-system-variables: true )
+  )));
+
+  --brand-1: #04E762;
+  --brand-2: #FFC857;
+  --brand-3: #DC0073;
+  --brand-4: #008BF8;
+  --brand-5: #89FC00;
+}
