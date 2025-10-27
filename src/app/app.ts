@@ -11,6 +11,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
   styleUrl: './app.scss',
 })
 export class App {
-  protected readonly title = signal('portfolio');
+  protected readonly title = signal('Bautista Rampinelli');
   readonly themeService = inject(ThemeService);
 }

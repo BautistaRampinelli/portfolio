@@ -1,19 +1,25 @@
 import { Component, inject } from '@angular/core';
 import { Theme, ThemeService } from '@app/core/services/theme-service';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { MatIcon } from '@angular/material/icon';
 
 @Component({
   selector: 'app-theme-selector',
-  imports: [MatButtonToggleModule],
+  imports: [MatButtonToggleModule, MatIcon],
   templateUrl: './theme-selector.html',
   styleUrl: './theme-selector.scss',
 })
 export class ThemeSelector {
-  private readonly theme = inject(ThemeService);
-  readonly current = this.theme.currentTheme;
-  readonly themes = this.theme.themes;
+  private themeService = inject(ThemeService);
+  readonly currentTheme = this.themeService.currentTheme;
+  readonly themes: { icon: string; value: Theme }[] = [
+    { icon: 'palette', value: 'theme-elegant' },
+    { icon: 'light_mode', value: 'theme-light' },
+    { icon: 'dark_mode', value: 'theme-dark' },
+    { icon: 'auto_awesome', value: 'theme-pop' },
+  ];
 
-  onChange(theme: string) {
-    this.theme.set(theme as any);
+  onChange(theme: Theme) {
+    this.themeService.set(theme);
   }
 }

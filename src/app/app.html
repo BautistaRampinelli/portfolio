@@ -1,6 +1,5 @@
-<app-header></app-header>
+<app-header [title]="title()"></app-header>
 <main>
-<h1 class="title">{{title()}}</h1>
   <mat-toolbar color="primary">
     <router-outlet></router-outlet>
     <app-theme-selector></app-theme-selector>

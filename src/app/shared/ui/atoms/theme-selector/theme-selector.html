@@ -1,11 +1,12 @@
-<mat-button-toggle-group
-  [value]="current()"
-  (change)="onChange($event.value)"
-  class="theme-toggle"
->
+<div class="theme-icons">
   @for (t of themes; track t) {
-  <mat-button-toggle [value]="t">
-    {{ t.replace("theme-", "").toUpperCase() }}
-  </mat-button-toggle>
+  <button
+    mat-icon-button
+    (click)="onChange(t.value)"
+    [class.active]="currentTheme() === t.value"
+    aria-label="Cambiar Tema"
+  >
+    <mat-icon>{{ t.icon }}</mat-icon>
+  </button>
   }
-</mat-button-toggle-group>
+</div>
