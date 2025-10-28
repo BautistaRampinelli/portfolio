@@ -1,47 +1,82 @@
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 
 @include mat.core();
 
-$theme-elegant-base: mat.define-theme((
-  color: (
-    theme-type: light,
-    use-system-variables: true
+$theme-elegant-base: mat.define-theme(
+  (
+    color: (
+      theme-type: light,
+      use-system-variables: true,
+    ),
   )
-));
+);
 
 .theme-elegant {
   @include mat.all-component-themes($theme-elegant-base);
 
-  --brand-1: #14248A;
-  --brand-2: #1F7A8C;
-  --brand-bg: #E9F1F7;
-  --brand-surface: #EFFFFF;
-  --brand-ink: #1E1B18;
+  --brand-1: #14248a;
+  --brand-2: #1f7a8c;
+  --brand-bg: #e9f1f7;
+  --brand-surface: #efffff;
+  --brand-ink: #1e1b18;
 
   background-color: var(--brand-bg);
   color: var(--brand-ink);
 }
 
 .theme-light {
-  @include mat.all-component-themes(mat.define-theme((
-    color: ( theme-type: light, use-system-variables: true )
-  )));
+  @include mat.all-component-themes(
+    mat.define-theme(
+      (
+        color: (
+          theme-type: light,
+          use-system-variables: true,
+        ),
+      )
+    )
+  );
+
+  --brand-1: #ffffff;
+  --brand-2: #effffa;
+  --brand-3: #e5ecf4;
+  --brand-4: #2ca6a4;
+  --brand-5: #668f80;
 }
 
 .theme-dark {
-  @include mat.all-component-themes(mat.define-theme((
-    color: ( theme-type: dark, use-system-variables: true )
-  )));
+  @include mat.all-component-themes(
+    mat.define-theme(
+      (
+        color: (
+          theme-type: dark,
+          use-system-variables: true,
+        ),
+      )
+    )
+  );
+
+  --brand-1: #30292f;
+  --brand-2: #413f54;
+  --brand-3: #5f5aa2;
+  --brand-4: #355691;
+  --brand-5: #3F4045;
 }
 
 .theme-pop {
-  @include mat.all-component-themes(mat.define-theme((
-    color: ( theme-type: light, use-system-variables: true )
-  )));
+  @include mat.all-component-themes(
+    mat.define-theme(
+      (
+        color: (
+          theme-type: light,
+          use-system-variables: true,
+        ),
+      )
+    )
+  );
 
-  --brand-1: #04E762;
-  --brand-2: #FFC857;
-  --brand-3: #DC0073;
-  --brand-4: #008BF8;
-  --brand-5: #89FC00;
+  --brand-1: #04e762;
+  --brand-2: #ffc857;
+  --brand-3: #dc0073;
+  --brand-4: #008bf8;
+  --brand-5: #89fc00;
 }

@@ -1,0 +1,13 @@
+button {
+  background-color: var(--brand-1);
+  color: var(--brand-surface);
+  padding: var(--space-medium) var(--space-large);
+  font-family: var(--font-brand);
+  font-size: var(--fs-body);
+  border-radius: var(--radius-medium);
+  transition: var(--transition-fast);
+
+  &:hover {
+    background-color: var(--brand-2);
+  }
+}

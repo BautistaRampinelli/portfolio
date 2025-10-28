@@ -1,0 +1,12 @@
+.div {
+  background: var(--brand-surface);
+  color: var(--brand-ink);
+  border-radius: var(--radius-medium);
+  box-shadow: var(--elevation-low);
+  padding: var(--space-large);
+  transition: var(--transition-normal);
+
+  &:hover {
+    box-shadow: var(--elevation-medium);
+  }
+}

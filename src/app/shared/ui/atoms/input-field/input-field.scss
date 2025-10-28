@@ -1,0 +1,12 @@
+.input-field {
+  width: 100%;
+  margin-bottom: var(--space-medium);
+
+  mat-form-field {
+    font-family: var(--font-plain);
+
+    .mat-input-element {
+      padding: var(--space-small);
+    }
+  }
+}
