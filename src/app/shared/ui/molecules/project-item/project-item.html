@@ -1,0 +1,8 @@
+<app-card-base className="project-card">
+  @if (imageUrl()) {
+  <img [src]="imageUrl()" [alt]="title()" class="project-thumb" />
+  }
+  <app-title [level]="2" [text]="title()"/>
+  <p>{{ desription() }}</p>
+  <app-button-primary [label]="linkLabel()"/>
+</app-card-base>

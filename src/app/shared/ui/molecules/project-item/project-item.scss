@@ -1,0 +1,13 @@
+.project-card {
+  .project-thumb {
+    width: 100%;
+    border-radius: var(--radius-small);
+    margin-bottom: var(--space-medium);
+  }
+
+  p {
+    margin-bottom: var(--space-medium);
+    font-family: var(--font-plain);
+    color: var(--brand-ink);
+  }
+}

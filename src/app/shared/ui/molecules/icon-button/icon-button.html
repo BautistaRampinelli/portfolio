@@ -1,0 +1,11 @@
+<button
+  mat-flat-button
+  [type]="type()"
+  [disabled]="disabled()"
+  class="icon-button"
+>
+  <mat-icon>{{ icon() }}</mat-icon>
+  @if (label()) {
+  <span>{{ label() }}</span>
+  }
+</button>

@@ -1,0 +1,13 @@
+.service-card {
+  text-align: left;
+  p {
+    margin-bottom: var(--space-medium);
+    font-family: var(--font-plain);
+    font-size: var(--fs-body);
+    color: var(--brand-ink);
+  }
+
+  app-button-primary {
+    margin-top: var(--space-small);
+  }
+}
