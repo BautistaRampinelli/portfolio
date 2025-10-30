@@ -1,0 +1,24 @@
+.about-me-section {
+  padding: var(--space-xlarge) var(--space-large);
+  background: var(--brand-surface);
+
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--space-large);
+
+    .profile-pic {
+      width: 180px;
+      border-radius: var(--radius-large);
+      box-shadow: var(--elevation-low);
+    }
+
+    .bio {
+      flex: 1;
+      font-family: var(--font-plain);
+      font-size: var(--fs-body);
+      color: var(--brand-ink);
+    }
+  }
+}

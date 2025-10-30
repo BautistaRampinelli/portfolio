@@ -1,0 +1,10 @@
+.services-section {
+  padding: var(--space-xlarge) var(--space-large);
+  background: var(--brand-bg);
+
+  .services-grid {
+    display: grid;
+    gap: var(--space-large);
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+}

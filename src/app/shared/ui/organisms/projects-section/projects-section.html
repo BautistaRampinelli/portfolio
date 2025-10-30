@@ -1,0 +1,14 @@
+<section class="projects-section">
+  <app-title [level]="2" text="Proyectos" />
+  <div class="projects-grid">
+    @for (p of projects(); track p.title) {
+    <app-project-item
+      [imageUrl]="p.imageUrl ?? ''"
+      [title]="p.title"
+      [desription]="p.description"
+      [linkUrl]="p.link ?? ''"
+      linkLabel="Ver Proyecto"
+    />
+    }
+  </div>
+</section>

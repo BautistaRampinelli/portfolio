@@ -1,0 +1,12 @@
+<section class="services-section">
+  <app-title [level]="2" text="Servicios" />
+  <div class="services-grid">
+    @for (service of services(); track service.title) {
+    <app-service-item
+      [title]="service.title"
+      [description]="service.description"
+      actionLabel="Más info"
+    />
+    }
+  </div>
+</section>

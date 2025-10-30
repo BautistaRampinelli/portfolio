@@ -1,0 +1,13 @@
+<section class="about-me-section">
+  <app-title [level]="2" text="Experiencia" />
+  <div class="content">
+    <img
+      [src]="myProfile().profileImageUrl"
+      [alt]="`Foto de ${myProfile().name}`"
+      class="profile-pic"
+    />
+    <div class="bio">
+      <p>{{ myProfile().bio }}</p>
+    </div>
+  </div>
+</section>

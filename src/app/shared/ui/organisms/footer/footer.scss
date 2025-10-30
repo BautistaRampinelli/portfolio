@@ -1,0 +1,22 @@
+.footer {
+  padding: var(--space-large);
+  background: var(--brand-ink);
+  color: var(--brand-surface);
+  text-align: center;
+
+  .social-icons a {
+    margin: 0 var(--space-small);
+    color: var(--brand-surface);
+    font-size: var(--fs-body);
+
+    &:hover {
+      color: var(--brand-2);
+    }
+  }
+
+  p {
+    margin: var(--space-small) 0 0 0;
+    font-family: var(--font-plain);
+    font-size: var(--fs-small);
+  }
+}
