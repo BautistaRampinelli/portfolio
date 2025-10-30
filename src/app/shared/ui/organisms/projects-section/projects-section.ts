@@ -1,14 +1,6 @@
 import { Component, input } from '@angular/core';
 import { ProjectItem, Title } from '../..';
-
-export type ProjectInterface = {
-  title: string;
-  description: string;
-  imageUrl?: string;
-  icon?: string;
-  link?: string;
-  technologies: string[];
-};
+import { ProjectInterface } from '@app/shared/models/portfolio-models';
 
 @Component({
   selector: 'app-projects-section',

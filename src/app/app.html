@@ -1,8 +1,3 @@
 <app-header [title]="title()"></app-header>
-<main>
-  <mat-toolbar color="primary">
-    <router-outlet></router-outlet>
-    <app-theme-selector></app-theme-selector>
-  </mat-toolbar>
-</main>
+<app-landing-page [projects]="projects()" [services]="services()" [myProfile]="myProfile()"></app-landing-page>
 <app-footer></app-footer>

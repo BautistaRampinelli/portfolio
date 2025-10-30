@@ -1,12 +1,6 @@
 import { Component, input } from '@angular/core';
 import { Title } from "../../atoms/title/title";
-
-export type AboutMeInterface = {
-  name: string;
-  bio: string;
-  profileImageUrl: string;
-  technologies: string[];
-}
+import { AboutMeInterface } from '@app/shared/models/portfolio-models';
 
 @Component({
   selector: 'app-about-me-section',

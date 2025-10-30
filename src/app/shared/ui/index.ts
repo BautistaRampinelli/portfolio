@@ -22,3 +22,6 @@ export * from './organisms/contact-section/contact-section';
 export * from './organisms/hero-section/hero-section';
 export * from './organisms/projects-section/projects-section';
 export * from './organisms/services-section/services-section';
+
+// Pages
+export * from './pages/landing-page/landing-page';

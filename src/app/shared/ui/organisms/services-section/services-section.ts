@@ -1,12 +1,6 @@
 import { Component, input } from '@angular/core';
 import { ServiceItem, Title } from '../..';
-
-export type ServiceInterface = {
-  title: string;
-  description: string;
-  icon?: string;
-  imageUrl?: string;
-}
+import { ServiceInterface } from '@app/shared/models/portfolio-models';
 
 @Component({
   selector: 'app-services-section',
