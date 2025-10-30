@@ -1,0 +1,12 @@
+.form-field {
+  width: 100%;
+  margin-bottom: var(--space-medium);
+
+  mat-form-field {
+    font-family: var(--font-plain);
+  }
+
+  .mat-form-field-outline {
+    border-radius: var(--radius-small);
+  }
+}

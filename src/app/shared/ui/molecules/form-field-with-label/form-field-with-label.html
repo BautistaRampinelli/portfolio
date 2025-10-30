@@ -1,4 +1,7 @@
 <mat-form-field appearance="outline" class="form-field">
-    <mat-label>{{ label()}}</mat-label>
-    <input >
+  <mat-label>{{ label() }}</mat-label>
+  <input mat-input [type]="type()" [formControlName]="controlName()" />
+  @if (type() === 'email') {
+  <mat-hint>Introduce un email válido</mat-hint>
+  }
 </mat-form-field>
